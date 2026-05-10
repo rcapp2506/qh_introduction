@@ -175,10 +175,11 @@ ax.text(2000, 0.12, 'Engineering quantum states\n at individual particle level',
         fontweight='bold', bbox=dict(boxstyle='round', facecolor='#FCE4EC',
                                      edgecolor='#E91E63', linewidth=2))
 
-# Citation at bottom (matches the LaTeX caption verbatim except for
-# the journal name italics, which the caption renders via \emph).
-ax.text(1962.5, 0.02, 'Adapted from: Dowling & Milburn, Phil. Trans. R. Soc. A (2003); Deutsch, PRX Quantum (2020)',
-        ha='center', va='center', fontsize=10, style='italic', color='gray')
+# Attribution: handled by the LaTeX caption in
+# chapters/introduction_revised.tex (Dowling & Milburn 2003;
+# Deutsch 2020). Intentionally not duplicated inside the PNG so
+# that the asset can be reused in other contexts (slides, etc.)
+# without locking in the attribution.
 
 # Set axis limits and remove axes
 ax.set_xlim(1890, 2035)
